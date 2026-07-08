@@ -1,0 +1,67 @@
+# ── 대회 원본 데이터 (외부 공개/재배포 금지) ────────────────
+# 2026 학교안전사고 데이터 분석·활용 경진대회 제공 데이터.
+# 참가 목적 외 사용 불가 → git 등 외부에 절대 올리지 않는다.
+data/
+*.xlsx
+*.xls
+*.xlsm
+*.csv
+*.parquet
+# 원본에서 파생된 중간 데이터 캐시도 동일하게 차단(직렬화 포맷 전반)
+*.feather
+*.pkl
+*.pickle
+*.h5
+*.hdf5
+*.npy
+*.npz
+*.db
+*.sqlite
+*.sqlite3
+
+# ── 파이썬 ──────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+.python-version
+build/
+dist/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ── 노트북 실행 산출물(대용량 이미지 등) ─────────────────
+# 필요 시 리포트용 그림은 Docs/ 아래에 별도로 관리
+code/outputs/
+
+# ── 환경 변수 / 시크릿 ──────────────────────────────────
+.env
+.env.*
+!.env.example
+
+# ── Claude Code ─────────────────────────────────────────
+.claude/
+
+# ── 에디터 / IDE ────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ── 로그 / 임시 ─────────────────────────────────────────
+*.log
+*.tmp
+*.bak
+
+# ── OS ──────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
